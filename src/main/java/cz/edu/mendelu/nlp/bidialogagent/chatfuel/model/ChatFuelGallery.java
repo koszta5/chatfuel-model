@@ -5,4 +5,8 @@ public class ChatFuelGallery extends  AbstractChatFuelSimpleAttachement {
 		this.type = "template";
 		this.payload = new GalleryPayload();
 	}
+
+	public void addImage(GalleryImage image){
+		((GalleryPayload) this.payload).addImage(image);
+	}
 }
