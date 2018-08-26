@@ -1,6 +1,6 @@
 package cz.edu.mendelu.nlp.bidialogagent.chatfuel.model;
 
-public class AbstractChatFuelSimpleAttachement implements  ChatFuelMessage {
+public class AbstractChatFuelSimpleAttachement implements Attachment {
 	protected String type;
 	protected Payload payload;
 

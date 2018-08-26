@@ -4,3 +4,7 @@
 chatfuel-model\.iml
 
 chatfuelmodel\.iml
+
+*.class
+
+target/

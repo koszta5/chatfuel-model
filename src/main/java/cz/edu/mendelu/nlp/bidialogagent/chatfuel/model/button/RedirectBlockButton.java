@@ -2,6 +2,7 @@ package cz.edu.mendelu.nlp.bidialogagent.chatfuel.model.button;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RedirectBlockButton extends Button {
@@ -9,9 +10,12 @@ public class RedirectBlockButton extends Button {
 		this.type = "show_block";
 	}
 
-	private String title;
 	@JsonProperty("block_names")
-	private List<String> blockNames;
+	private List<String> blockNames = new ArrayList<>();
+
+	public void addBlock(String blockName){
+		blockNames.add(blockName);
+	}
 
 
 

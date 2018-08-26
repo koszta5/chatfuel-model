@@ -19,6 +19,14 @@ public class GalleryImage {
 		this.buttons.add(btn);
 	}
 
+	public List<Button> getButtons() {
+		return buttons;
+	}
+
+	public void setButtons(List<Button> buttons) {
+		this.buttons = buttons;
+	}
+
 	public String getTitle() {
 		return title;
 	}
