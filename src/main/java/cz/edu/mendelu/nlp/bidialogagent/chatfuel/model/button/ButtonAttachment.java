@@ -1,6 +1,13 @@
 package cz.edu.mendelu.nlp.bidialogagent.chatfuel.model.button;
 
-import cz.edu.mendelu.nlp.bidialogagent.chatfuel.model.Payload;
+import cz.edu.mendelu.nlp.bidialogagent.chatfuel.model.AbstractChatFuelSimpleAttachement;
 
-public class ButtonPayload implements Payload {
+public class ButtonAttachment extends AbstractChatFuelSimpleAttachement {
+	public ButtonAttachment() {
+		this.type = "template";
+		this.payload = new ButtonPayload();
+	}
+
+
+
 }

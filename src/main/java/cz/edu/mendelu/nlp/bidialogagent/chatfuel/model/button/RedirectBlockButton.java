@@ -9,6 +9,9 @@ public class RedirectBlockButton extends Button {
 	public RedirectBlockButton() {
 		this.type = "show_block";
 	}
+	public RedirectBlockButton(String block){
+		this.addBlock(block);
+	}
 
 	@JsonProperty("block_names")
 	private List<String> blockNames = new ArrayList<>();
